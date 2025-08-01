@@ -1,0 +1,12 @@
+{
+  "buttondown_api_key": "YOUR_BUTTONDOWN_API_KEY",
+  "newsletter_id": null,
+  "send_time": "08:00",
+  "timezone": "Europe/Paris",
+  "utm_source": "lueurquotidienne",
+  "utm_medium": "email",
+  "utm_campaign": "daily_quote",
+  "tip_link": "https://ko-fi.com/your_page",
+  "reports_csv": "analytics_report.csv",
+  "site_url": "https://lueur-quotidienne.netlify.app"
+}

@@ -193,3 +193,77 @@ p {
     font-size: 1.2rem;
   }
 }
+/* Enhanced hero section */
+.hero {
+  background: linear-gradient(180deg, var(--primary-bg) 0%, var(--secondary-bg) 100%), url('../images/hero_background.png') center/cover no-repeat;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted-color);
+}
+
+/* Improved navigation */
+nav {
+  background-color: var(--secondary-bg);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Product card enhancements */
+.product-card {
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.product-link {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.product-link:hover {
+  background-color: var(--accent-color-dark);
+}
+
+/* Footer enhancements */
+.site-footer {
+  background-color: var(--secondary-bg);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--muted-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Tapis de Yoga en Liège",
+    "description": "Un tapis de yoga écologique pour trouver votre équilibre intérieur.",
+    "image": "assets/images/yoga_mat.png",
+    "link": "https://example.com/tapis-yoga"
+  },
+  {
+    "title": "Huile Essentielle Relaxante",
+    "description": "Mélange d'huiles essentielles pour apaiser l'esprit et le corps.",
+    "image": "assets/images/essential_oils.png",
+    "link": "https://example.com/huile-relaxante"
+  },
+  {
+    "title": "Carnet de Gratitude",
+    "description": "Un carnet élégant pour noter vos pensées positives et gratitudes quotidiennes.",
+    "image": "assets/images/journal.png",
+    "link": "https://example.com/carnet-gratitude"
+  }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Lueur Quotidienne</title>
+    <meta name="description" content="Contactez l'\u00e9quipe de Lueur Quotidienne : vos questions et commentaires sont les bienvenus." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">Lueur Quotidienne</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">\u00c0 propos</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="site-main">
+      <section class="hero">
+        <h1>Contactez‑nous</h1>
+        <p>Nous sommes ravis d’avoir de vos nouvelles. Laissez‑nous un message et nous vous répondrons dans les plus brefs délais.</p>
+      </section>
+
+      <section class="contact-form">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Hidden input for Netlify -->
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form-group" style="display:none;">
+            <label>Ne pas remplir si vous êtes humain</label>
+            <input name="bot-field" />
+          </div>
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="button-primary">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://ko-fi.com/your_page" class="support-button" target="_blank" rel="noopener">💖 Soutenir le projet</a>
+      <p class="footer-note">© <span id="current-year"></span> Lueur Quotidienne. Tous droits réservés.</p>
+      <p class="footer-note">
+        <a href="cgu.html">CGU</a> | <a href="privacy.html">Politique de confidentialité</a> | <a href="cookies.html">Cookies</a>
+      </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Lueur Quotidienne {{DATE}}</title>
+  <style>
+    /* Basic reset for consistency across clients */
+    body { margin:0; padding:0; background:#f7f6f2; font-family:'Quicksand', Arial, sans-serif; }
+    table { border-collapse:collapse; }
+    img { border:0; display:block; }
+    .container { width:100%; max-width:600px; margin:0 auto; background:#ffffff; border-radius:8px; overflow:hidden; }
+    .header { padding:20px; text-align:center; background:#faf2f8; }
+    .header h1 { margin:0; font-size:24px; color:#836b84; }
+    .quote { padding:20px; font-size:18px; color:#555; line-height:1.4; }
+    .product { padding:20px; text-align:center; }
+    .product img { width:100%; max-width:220px; height:auto; border-radius:4px; margin:0 auto; }
+    .product-title { font-size:20px; color:#333; margin:15px 0 5px; font-weight:bold; }
+    .product-desc { font-size:16px; color:#666; margin-bottom:20px; line-height:1.4; }
+    .cta { display:inline-block; padding:12px 20px; background:#ff96ac; color:#ffffff; text-decoration:none; border-radius:25px; font-weight:bold; }
+    .footer { padding:20px; text-align:center; font-size:14px; color:#999; line-height:1.4; }
+    .footer a { color:#ff96ac; text-decoration:none; }
+    @media only screen and (max-width:480px) {
+      .quote { font-size:16px; }
+      .product-title { font-size:18px; }
+      .product-desc { font-size:14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>✨ Chaque jour, une lumière nouvelle ✨</h1>
+    </div>
+    <div class="quote">
+      <p>{{QUOTE}}</p>
+    </div>
+    <div class="product">
+      <img src="{{PRODUCT_IMG}}" alt="{{PRODUCT_TITLE}}">
+      <div class="product-title">{{PRODUCT_TITLE}}</div>
+      <div class="product-desc">{{PRODUCT_DESC}}</div>
+      <a href="{{PRODUCT_LINK}}" class="cta">Découvrir ce produit</a>
+    </div>
+    <div class="footer">
+      Merci de faire partie de notre communauté {{NAME}} !<br>
+      <a href="{{TIP_LINK}}">💖 Soutenir le projet</a>
+    </div>
+  </div>
+  <!-- Transparent tracking pixel (1×1) -->
+  <img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACwAAAAAAQABAAACAkQBADs=" alt="" width="1" height="1" style="display:none;">
+</body>
+</html>

@@ -305,7 +305,22 @@ nav ul li a:hover {
   font-size: 1.4rem;
   color: var(--text-color);
   margin-bottom: 2rem;
+    
+.button-primary {
+  dsplay: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease;
 }
+.button-primary:hover {
+  background: var(--accent-color-dark);
+
+
 .btn-cta {
   display: inline-block;
   padding: 0.8rem 1.8rem;

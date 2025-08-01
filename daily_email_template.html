@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lueur Quotidienne – Courriel du jour</title>
+    <style>
+      /* Styles minimaux pour compatibilité email */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', Arial, sans-serif;
+        background-color: #f9f7fc;
+        color: #333333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .quote {
+        font-style: italic;
+        font-size: 18px;
+        color: #eeb1a8;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .product {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .product img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .product-title {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .product-desc {
+        font-size: 14px;
+        color: #666666;
+        margin: 10px 0;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffc7c2;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .support {
+        margin-top: 30px;
+        text-align: center;
+      }
+      .support a {
+        color: #eeb1a8;
+        text-decoration: none;
+      }
+      .footer {
+        font-size: 12px;
+        color: #999999;
+        text-align: center;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lueur Quotidienne</h1>
+      <p style="text-align:center; font-size:14px; color:#777777">✨ Chaque jour, une lumière nouvelle ✨</p>
+      <!-- Citation du jour -->
+      <div class="quote">{{quote}}</div>
+
+      <!-- Produit du jour -->
+      <div class="product">
+        <img src="{{product_image}}" alt="{{product_title}}" />
+        <div class="product-title">{{product_title}}</div>
+        <div class="product-desc">{{product_description}}</div>
+        <a href="{{product_link}}" class="btn">Découvrir</a>
+      </div>
+
+      <!-- Lien de soutien -->
+      <div class="support">
+        <p>Vous appréciez cette newsletter ? <a href="{{support_link}}">Soutenez le projet</a> 💖</p>
+      </div>
+
+      <div class="footer">
+        © {{year}} Lueur Quotidienne. Tous droits réservés.
+      </div>
+    </div>
+  </body>
+</html>

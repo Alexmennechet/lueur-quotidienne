@@ -14,26 +14,46 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1 class="site-title">Lueur Quotidienne</h1>
-      <p class="site-slogan">✨ Chaque jour, une lumière nouvelle ✨</p>
-    </header>
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html" class="logo">Lueur Quotidienne</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
     <main class="site-main">
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Lueur Quotidienne</h1>
+        <p>Chaque jour, une lumière nouvelle pour nourrir votre esprit et votre bien‑être.</p>
+        <a href="shop.html" class="button-primary">Découvrir la boutique</a>
+      </section>
+
+      <!-- Citation du jour -->
       <section id="quote-section" class="quote-section">
         <h2 class="section-title">Citation du jour</h2>
         <blockquote id="quote-text" class="quote-text">La lumière que tu cherches à l’extérieur brille déjà en toi.</blockquote>
       </section>
 
+      <!-- Produits en vedette -->
       <section id="products-section" class="products-section">
         <h2 class="section-title">Produits bien‑être recommandés</h2>
         <div id="products-grid" class="products-grid"></div>
+        <div style="text-align:center;margin-top:1rem;">
+          <a href="shop.html" class="button-primary">Voir tous les produits</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <a
-        href="#"
+        href="https://ko-fi.com/your_page"
         id="support-link"
         class="support-button"
         target="_blank"
@@ -42,9 +62,13 @@
       <p class="footer-note">
         © <span id="current-year"></span> Lueur Quotidienne. Tous droits réservés.
       </p>
+      <p class="footer-note">
+        <a href="cgu.html">CGU</a> | <a href="privacy.html">Politique de confidentialité</a> | <a href="cookies.html">Cookies</a>
+      </p>
     </footer>
 
     <!-- JavaScript -->
+    <script src="assets/js/analytics.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

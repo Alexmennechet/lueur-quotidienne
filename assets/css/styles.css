@@ -264,6 +264,171 @@ nav ul li a:hover {
   padding: 2rem 1rem;
   text-align: center;
   color: var(--muted-color);
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05
+                            
+/* Hero section styling */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: var(--text-color);
+  padding: 4rem 2rem;
+  background-image: url('../hero_background.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.9) 100%);
+  z-index: 1;
+}
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+.hero p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+.btn-cta {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease;
+}
+.btn-cta:hover {
+  background: var(--accent-color-dark);
+}
+
+/* Sticky navigation improvements */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+}
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Product card improvements */
+.product-card {
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.product-card h3 {
+  font-size: 1.4rem;
+  margin: 1rem;
+  color: var(--text-color);
+}
+.product-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+  color: var(--muted-color);
+}
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0 1rem 1rem;
+}
+.product-card .product-link {
+  margin: 0 1rem 1rem;
+}
+
+/* Footer improvements */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--primary-bg);
+  padding: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.site-footer .column {
+  flex: 1 1 200px;
+}
+.site-footer h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.site-footer ul li {
+  margin-bottom: 0.5rem;
+}
+.site-footer ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.site-footer ul li a:hover {
+  color: var(--accent-color);
+}
+.site-footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+.site-footer .socials a img {
+  width: 24px;
+  height: 24px;
+}
+
 }
 
